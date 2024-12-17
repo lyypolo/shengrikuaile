@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日祝福</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 50px;
+        }
+        .heart {
+            position: relative;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: #ff69b4;
+            transform: rotate(-45deg);
+            margin: 20px;
+        }
+        .heart:before,
+        .heart:after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: #ff69b4;
+            border-radius: 100px;
+        }
+        .heart:before {
+            top: -100px;
+            left: 0;
+        }
+        .heart:after {
+            left: 100px;
+            top: 0;
+        }
+        h1, p {
+            color: #fff;
+            position: relative;
+            z-index: 1;
+            opacity: 0; /* 初始透明度为0 */
+            animation: fadeIn 2s forwards; /* 添加淡入动画 */
+        }
+        h1 {
+            animation-delay: 0.5s; /* 延迟0.5秒 */
+        }
+        p {
+            animation-delay: 1s; /* 延迟1秒 */
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1; /* 最终透明度为1 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="heart"></div>
+    <h1>生日快乐，亲爱的 [菜鸡]！</h1>
+    <p>愿你的每一天都充满快乐和惊喜。</p>
+    <p>希望在新的一岁里，你能实现所有的梦想，享受生活的每一刻。</p>
+    <p>祝你连胜、上星、上分！</p>
+    <p>最好的祝福，<br>[你的宝宝蓝]</p>
+</body>
+</html>
